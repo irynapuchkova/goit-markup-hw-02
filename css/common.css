@@ -1,3 +1,15 @@
+:root {
+  --logo-color: #000000;
+  --title-link-color: #212121;
+  --text--color: #757575;
+  --text-contacts-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --bg-primary-color: #ffffff;
+  --bg-footer-color: #2f303a;
+  --bg-section-color: #f5f4fa;
+  --filter-color: rgba(0, 0, 0, 0.25);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -12,29 +24,21 @@
   overflow: hidden;
 }
 
-:root {
-  --logo-color: #000000;
-  --title-link-color: #212121;
-  --text--color: #757575;
-  --text-contacts-color: rgba(255, 255, 255, 0.6);
-  --accent-color: #2196f3;
-  --bg-primary-color: #ffffff;
-  --bg-footer-color: #2f303a;
-  --bg-section-color: #f5f4fa;
-  --filter-color: rgba(0, 0, 0, 0.25);
-}
-
 body {
   background-color: var(--bg-primary-color);
   color: var(--text--color);
+}
+
+ul {
+  list-style: none;
 }
 
 .link {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
+.section-title {
+  color: var(--title-link-color);
 }
 
 /* header */
@@ -48,11 +52,7 @@ ul {
 
 .logo:hover,
 .logo:focus {
-  color: var(--accent-color);
-}
-
-.section-title {
-  color: var(--title-link-color);
+  color: var(--logo-color);
 }
 
 /* site-nav */
@@ -65,14 +65,20 @@ ul {
   color: var(--accent-color);
 }
 
-/* contact-nav */
-.contact-nav .link {
+/* contact-nav, filter */
+.contact-nav .link,
+.filter-image .link {
   color: var(--text--color);
 }
 
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
+}
+
+.filter-image .link:hover,
+.filter-image .link:focus {
+  color: transparent;
 }
 
 /* hero */
@@ -84,18 +90,17 @@ ul {
   color: var(--bg-primary-color);
 }
 
-/* hero-button */
 .hero-btn {
   color: var(--bg-primary-color);
   background-color: var(--accent-color);
 }
 
 /* section staff */
-.section.personal {
+.section.personnel {
   background-color: var(--bg-section-color);
 }
 
-.personal-image {
+.personnel-image {
   background-color: var(--bg-primary-color);
 }
 
@@ -105,6 +110,11 @@ ul {
 }
 
 .footer-logo {
+  color: var(--bg-primary-color);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
   color: var(--bg-primary-color);
 }
 
