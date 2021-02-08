@@ -103,6 +103,13 @@ ul {
   color: var(--text--color);
 }
 
+.contact-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
@@ -125,7 +132,7 @@ ul {
 
 /* section identity */
 .identity h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
